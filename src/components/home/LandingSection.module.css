@@ -1,0 +1,22 @@
+.landing {
+  /* background-image: url(../assets/hero_slide_3.jpg); */
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.landing button {
+  background-color: #ed662a;
+  padding: 10px 20px;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+  border: none;
+  cursor: pointer;
+}

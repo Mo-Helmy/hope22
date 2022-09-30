@@ -1,0 +1,85 @@
+.product-type-section {
+  padding: 60px 0;
+  width: 90vw;
+  margin: auto;
+}
+.product-type-section h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-type-section p {
+  color: #555;
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+.content img {
+  width: 50px;
+  min-width: 100%;
+}
+
+.card {
+  flex-basis: calc(25% - 19px);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+  .content {
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+  .content {
+    gap: 20px;
+  }
+  .content img {
+    width: 50px;
+  }
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(85, 85, 85, 0.486);
+}
+.card svg {
+  color: #555;
+}
+.card p {
+  color: #555;
+  font-size: 15px;
+}
+.card h2 {
+  font-size: 20px;
+}
+.img-control {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mini-card {
+  flex: 1;
+}

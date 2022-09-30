@@ -1,0 +1,30 @@
+.category-list {
+  position: absolute;
+  background-color: #fff;
+  color: #777;
+  padding: 0;
+  top: 100%;
+  min-width: max-content;
+  transition: all 0.3s linear;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(119, 119, 119, 0.301);
+}
+.category-list li {
+  display: block;
+}
+.category-list li:hover {
+  background-color: #777;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .category-list {
+    position: relative;
+    display: none;
+    width: 100%;
+    background-color: #eee;
+  }
+  .category-list li {
+    padding: 10px;
+  }
+}
