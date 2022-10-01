@@ -8,8 +8,9 @@ const LandingSection = () => {
   return (
     <div
       className={classes.landing}
-      style={{ backgroundImage: `url(${langingImage})` }}
+      // style={{ backgroundImage: `url(${langingImage})` }}
     >
+      <div className={classes.overlay}></div>
       <button>
         Shop Now <FontAwesomeIcon icon={faArrowRightLong} />
       </button>

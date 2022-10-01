@@ -1,9 +1,11 @@
 import React from "react";
 import FeaturedProductItem from "./FeaturedProductItem";
 
+import classes from "./FeaturedProductsSection.module.css";
+
 const DUMMY_DATA = [
   {
-    title: "Product One",
+    title: "Printed Slip On Regular Fit",
     id: "p1",
     category: "men",
     productType: "tshirt",
@@ -17,8 +19,8 @@ const DUMMY_DATA = [
       "this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion ",
   },
   {
-    title: "Product Two",
-    id: "p1",
+    title: "Printed Slip On Regular Fit",
+    id: "p2",
     category: "men",
     productType: "tshirt",
     black: "https://i.ibb.co/gTqxfs5/black.jpg",
@@ -31,7 +33,7 @@ const DUMMY_DATA = [
       "this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion this is describtion ",
   },
   {
-    title: "Product Three",
+    title: "Printed Slip On Regular Fit",
     id: "p3",
     category: "men",
     productType: "tshirt",
@@ -48,11 +50,11 @@ const DUMMY_DATA = [
 
 const FeaturedProductsSection = () => {
   return (
-    <div>
+    <div className={classes.main}>
       <h2>You may also be interested in</h2>
-      <div>
+      <div className={classes.content}>
         {DUMMY_DATA.map((item) => (
-          <FeaturedProductItem item={item} />
+          <FeaturedProductItem item={item} key={item.id} />
         ))}
       </div>
     </div>
